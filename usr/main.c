@@ -18,7 +18,9 @@ void Delay(u32 dly);
 int main(void)
 {
 	LED_GPIO_Config();	//LED IO≈‰÷√
-
+	if(a > 0) {
+	}
+	
 	while (1)
 	{
 		LED_ON();		    //µ„¡¡LED.PA8
