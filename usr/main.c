@@ -4,6 +4,7 @@
 
 #include "stm32f10x.h"
 #include "Led.h"
+#include "uart.h"
 
 void Delay(u32 dly);
 
@@ -18,6 +19,8 @@ void Delay(u32 dly);
 int main(void)
 {
 	LED_GPIO_Config();	//LED IO≈‰÷√
+	UART_Config();
+	System_clockIini();
 
 	while (1)
 	{
